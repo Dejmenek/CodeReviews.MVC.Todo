@@ -1,0 +1,173 @@
+html {
+    font-size: 14px;
+    font-family: "Dongle", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4 {
+    font-family: "Dongle", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #FFEDDF;
+}
+
+input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+input[type='text'] {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#editForm {
+    display: none;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f8f8f8;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    width: 24px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #28a745;
+}
+
+.checkmark::after {
+    content: "";
+    display: none;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    display: block;
+}
+
+main {
+    border: 1px solid black;
+    box-shadow: 0 5px 0 black;
+    border-radius: 10px;
+    padding: 2rem;
+    background: white;
+}
+
+#todos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.todo-card {
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 2px 0 black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.task-name {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+    .edit-btn:hover {
+        background-color: #0056b3;
+    }
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .delete-btn:hover {
+        background-color: #a71d2a;
+    }
+.add-btn {
+    background-color: #28a745;
+    color: white;
+}
+    .add-btn:hover {
+        background-color: #218838;
+    }
